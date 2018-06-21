@@ -50,8 +50,18 @@ body, html {
 /* Two image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 50%;
+  width: 42%;
+  margin: 5% 5% 8%;
 }
+
+.column:first-child {
+  margin-right: 2.5%;
+}
+
+.column:last-child {
+  margin-left: 2.5%;
+}
+
 
 /* Clear floats after image containers */
 .row::after {
