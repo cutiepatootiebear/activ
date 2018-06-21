@@ -5,7 +5,9 @@ var btn = document.getElementById("learn-more");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-span = modal.style.display = "none";
+
+// get the Youtube iframe when modal closes
+var iframe = document.getElementById("iframeYoutube");
 
 // When the user clicks the button, open the modal 
 btn.onclick = function () {
@@ -14,23 +16,18 @@ btn.onclick = function () {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
-    modal.style.display = "none";
+    closeModal();
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        closeModal();
     }
 }
 
-$(document).ready(function () {
-
-})
-
-function changeVideo(vId) {
-    var iframe = document.getElementById("iframeYoutube");
-    iframe.src = "https://www.youtube.com/embed/qVW6lOQziYM"
-
-    $("#myModal").modal("show");
+function closeModal() {
+    modal.style.display = "none";
+    // reload the iframe on close to stop video
+    iframe.src = iframe.src;
 }
