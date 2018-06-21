@@ -82,12 +82,27 @@ body, html {
     font-size: 18px;
     width:80%;
   }
+
   .hero-text p {
     margin-bottom: 30px;
   }
   .column {
-    width: 100%;
+    width: 80%;
+    margin: 10%;
   }
+  
+  .column:first-child {
+    margin-right: 10%;
+  }
+  
+  .column:last-child {
+    margin-left: 10%;
+  }
+
+  .game-title-container {
+    padding-bottom: 10%;
+  }
+
 }
 
 
