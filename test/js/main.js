@@ -5,6 +5,7 @@ var btn = document.getElementById("learn-more");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+span = modal.style.display = "none";
 
 // When the user clicks the button, open the modal 
 btn.onclick = function () {
