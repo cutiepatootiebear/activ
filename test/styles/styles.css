@@ -47,7 +47,6 @@ body, html {
 .column {
   float: left;
   width: 33.33%;
-  padding: 5px;
 }
 
 /* Clear floats after image containers */
@@ -61,6 +60,16 @@ body, html {
 @media screen and (max-width: 500px) {
   .hero-image {
     background-image: url("../assets/hero_img_mobile_01.jpg");
+    height: 85%;
+    background-position: left top;
+  }
+  .hero-text {
+    top: 65%;
+    font-size: 18px;
+    width:80%;
+  }
+  .hero-text p {
+    margin-bottom: 30px;
   }
   .column {
     width: 100%;
