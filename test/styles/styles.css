@@ -18,6 +18,10 @@ body, html {
   position: relative;
 }
 
+.game-title-container img {
+  width: 100%;
+}
+
 /* Place text in the middle of the image */
 .hero-text {
   font-family: 'Cairo',Verdana, Geneva, Tahoma, sans-serif;
@@ -46,7 +50,7 @@ body, html {
 /* Two image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
 }
 
 /* Clear floats after image containers */
